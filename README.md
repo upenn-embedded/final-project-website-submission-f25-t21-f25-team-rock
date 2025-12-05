@@ -42,7 +42,9 @@ The primary objective of this project is to develop a system that monitors a use
 This Smart Chair will be constructed by integrating sensing and control modules onto a chair frame. This system includes three functional parts: a seat sensing part, a backrest sensing part, and a feedback and control part.
 
 1. Seat Section: One pressure sensor is installed on the seat cushion to detect user occupancy and measure sitting duration.
+
 2. Backrest Section: Two Time-of-Flight distance sensors are mounted on the backrest to measure the distance between the user's back and the chair surface, allowing the system to classify posture states such as neutral, slouched, or leaning forward.
+
 3. Control and Feedback Module: The MCU collects data from all sensors, processes the readings, and controls the feedback mechanisms. The vibration motor and the music from the speaker alerts the user.
 
 The Smart Chair is designed with a compact and ergonomic structure that prioritizes comfort, functionality, and ease of assembly. All electronic wiring is routed internally along the chair frame to ensure user safety and maintain a clean, professional appearance. The system adopts a modular layout, allowing individual components such as the sensors, control board, and power supply to be easily maintained or replaced.
