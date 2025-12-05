@@ -15,7 +15,7 @@
 
 **GitHub Repository URL:** https://github.com/upenn-embedded/final-project-f25-f25_final_project_t21_team-rock.git
 
-**GitHub Pages Website URL:** [for final submission]*
+**GitHub Pages Website URL:** https://upenn-embedded.github.io/final-project-website-submission-f25-t21-f25-team-rock/
 
 ## Final Project Proposal
 
