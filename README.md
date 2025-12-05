@@ -388,7 +388,11 @@ Video:[FinalProjectVideoo.mp4](https://drive.google.com/file/d/14OEicxZVhBAQdAEK
 
 ### 3. Results
 
-*What were your results? Namely, what was the final solution/design to your problem?*
+The smart chair successfully integrates all major sensing, processing, and feedback components.
+
+The ATmega328PB microcontroller reads data from the thin film pressure sensor, two VL53L0X ToF distance sensors, and the DS1307 RTC. These measurements are fused to classify posture and track sitting duration. When bad posture is detected and maintained for more than 5 seconds, the system triggers the vibration motor through a PWM driver stage and optionally sends posture status to an ESP32 via UART.
+
+Overall, the final prototype works as planned. It can detect posture correctly, read all sensors reliably, adjust the vibration strength, and run safely with the power system. More detailed tests are shown in the next sections
 
 #### 3.1 Software Requirements Specification (SRS) Results
 
@@ -404,7 +408,9 @@ Video:[FinalProjectVideoo.mp4](https://drive.google.com/file/d/14OEicxZVhBAQdAEK
 | SRS-06 | The system shall communicate with one RTC over I²C to get the time data.                                                                                                                                                                                                                           | Verified. The RTC (DS1307) communicated with the MCU via I²C. Time data (hours, minutes, seconds) were read correctly, and repeated reads showed stable and accurate timestamps.                                                                                                                         |
 
 
-SRS-02, SRS-05 and SRS-06:![02](./Images/srs1.jpg)
+SRS-02, SRS-06:![02](./Images/srs1.jpg)
+
+SRS-04, SRS-05: ![04](./images/srs2.jpg)
 
 
 #### 3.2 Hardware Requirements Specification (HRS) Results
