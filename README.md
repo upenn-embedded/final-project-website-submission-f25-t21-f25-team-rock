@@ -404,7 +404,7 @@ Video:[FinalProjectVideoo.mp4](https://drive.google.com/file/d/14OEicxZVhBAQdAEK
 | SRS-06 | The system shall communicate with one RTC over I²C to get the time data.                                                                                                                                                                                                                           | Verified. The RTC (DS1307) communicated with the MCU via I²C. Time data (hours, minutes, seconds) were read correctly, and repeated reads showed stable and accurate timestamps.                                                                                                                         |
 
 
-SRS-02, SRS-05 and SRS-06:![02](./Images/demoSRS.jpg)
+SRS-02, SRS-05 and SRS-06:![02](./Images/srs1.jpg)
 
 
 #### 3.2 Hardware Requirements Specification (HRS) Results
