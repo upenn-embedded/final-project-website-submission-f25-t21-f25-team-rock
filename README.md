@@ -1,6 +1,5 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/gnHZBlmB)
 
-
 # final-project-skeleton
 
 **Team Number:** 21
@@ -13,9 +12,9 @@
 | Deepa Lokesha    | deepasr1@seas.upenn.edu |
 | Ruoqi Wu         | neorqi@seas.upenn.edu   |
 
-**GitHub Repository URL:** https://github.com/upenn-embedded/final-project-f25-f25_final_project_t21_team-rock.git
+**GitHub Repository URL:** https://github.com/upenn-embedded/SMART-CHAIR.git
 
-**GitHub Pages Website URL:** https://upenn-embedded.github.io/final-project-website-submission-f25-t21-f25-team-rock/
+**GitHub Pages Website URL:** https://upenn-embedded.github.io/SMART-CHAIR/
 
 ## Final Project Proposal
 
@@ -42,9 +41,7 @@ The primary objective of this project is to develop a system that monitors a use
 This Smart Chair will be constructed by integrating sensing and control modules onto a chair frame. This system includes three functional parts: a seat sensing part, a backrest sensing part, and a feedback and control part.
 
 1. Seat Section: One pressure sensor is installed on the seat cushion to detect user occupancy and measure sitting duration.
-
 2. Backrest Section: Two Time-of-Flight distance sensors are mounted on the backrest to measure the distance between the user's back and the chair surface, allowing the system to classify posture states such as neutral, slouched, or leaning forward.
-
 3. Control and Feedback Module: The MCU collects data from all sensors, processes the readings, and controls the feedback mechanisms. The vibration motor and the music from the speaker alerts the user.
 
 The Smart Chair is designed with a compact and ergonomic structure that prioritizes comfort, functionality, and ease of assembly. All electronic wiring is routed internally along the chair frame to ensure user safety and maintain a clean, professional appearance. The system adopts a modular layout, allowing individual components such as the sensors, control board, and power supply to be easily maintained or replaced.
@@ -378,13 +375,11 @@ If you’ve never made a GitHub pages website before, you can follow this webpag
 
 Video:[FinalProjectVideoo.mp4](https://drive.google.com/file/d/14OEicxZVhBAQdAEKhb1x2mcfdiAJ4OVz/view?usp=sharing)
 
-
 ### 2. Images
 
 ![p1](./images/p1.jpg)
 
 ![p2](./images/p2.jpg)
-
 
 ### 3. Results
 
@@ -396,8 +391,6 @@ Overall, the final prototype works as planned. It can detect posture correctly, 
 
 #### 3.1 Software Requirements Specification (SRS) Results
 
-
-
 | ID     | Description                                                                                                                                                                                                                                                                                         | Validation Outcome                                                                                                                                                                                                                                                                                         |
 | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | SRS-01 | The system shall read analog data from one thin-film pressure sensors using the MCU’s ADC , updating seat-occupancy status and sitting-duration counters every 200ms . A user shall be considered “absent” if all sensor readings remain below a calibrated no-load threshold for more than 1s. | Verified. The thin-film pressure sensor readings were successfully captured via the ATmega ADC at 1 s intervals. Logged data show correct occupancy detection and accurate sitting-duration counting. The system reliably flagged “absent” when readings stayed below the calibrated threshold for >1 s. |
@@ -407,14 +400,11 @@ Overall, the final prototype works as planned. It can detect posture correctly, 
 | SRS-05 | The ESP shall transmit posture and sitting-time data via UART.                                                                                                                                                                                                                                      | Verified. Posture classification results and sitting-time data were transmitted from ATmega to the ESP module over UART at the configured baud rate. Serial logs show consistent, error-free packet transfer.                                                                                              |
 | SRS-06 | The system shall communicate with one RTC over I²C to get the time data.                                                                                                                                                                                                                           | Verified. The RTC (DS1307) communicated with the MCU via I²C. Time data (hours, minutes, seconds) were read correctly, and repeated reads showed stable and accurate timestamps.                                                                                                                         |
 
-
 SRS-02, SRS-06:![02](./Images/srs1.jpg)
 
 SRS-04, SRS-05: ![04](./images/srs2.jpg)
 
-
 #### 3.2 Hardware Requirements Specification (HRS) Results
-
 
 | ID     | Description                                                                                                                                                                                                                                                                                | Validation Outcome                                                                                                                                                                                                                      |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
